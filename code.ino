@@ -31,15 +31,15 @@ void loop() {
   // ligar 18 horas para apagar 5 da manhã da outro dia.
 
   if(countLuz >= 0 && countLuz < 39600) {
-    digitalWrite(ledPin, HIGH); // Desliga lampada
+    digitalWrite(ledPin, HIGH); // Liga lampada
   }
 
   if(countLuz >= 39600) {
-    digitalWrite(ledPin, LOW); // Liga Lampada
+    digitalWrite(ledPin, LOW); // Desliga Lampada
   }
 
   if(countLuz >= 93600) {
-    countLuz = 0;
+    countLuz = 0; // Zera e Liga a lampada
   }
 
   
