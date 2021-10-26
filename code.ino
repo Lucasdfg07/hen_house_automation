@@ -9,8 +9,6 @@ int i = 0; // Ajusta o ângulo inicial do Servo
 int countLuz = 0;
 int countServo = 0;
 const int ledPin = 8; //Lampada no pino 8
-  
-unsigned long myTime;
 
 void setup() {
   meuservo.attach(9); // Declara o pino do servo
@@ -22,7 +20,6 @@ void setup() {
 }
  
 void loop() { 
-  myTime = millis();
   countLuz = countLuz + 1;
   countServo = countServo + 1;
 
