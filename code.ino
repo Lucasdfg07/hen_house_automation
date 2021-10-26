@@ -38,7 +38,7 @@ void loop() {
     digitalWrite(ledPin, LOW); // Liga Lampada
   }
 
-  if(countLuz >= 79200) {
+  if(countLuz >= 93600) {
     countLuz = 0;
   }
 
