@@ -8,7 +8,7 @@ Servo meuservo; // Cria o objeto servo para programação
 int i = 0; // Ajusta o ângulo inicial do Servo
 int countLuz = 0;
 int countServo = 0;
-const int ledPin = 8; //led no pino 2
+const int ledPin = 8; //Lampada no pino 8
   
 unsigned long myTime;
 
@@ -29,7 +29,7 @@ void loop() {
   // Desliga/Liga lâmpada de 11 em 11 horas
   // Ao injetar o código, ele liga a lâmpada e depois de 11 horas ligado, ele desliga.
   // ligar 18 horas para apagar 5 da manhã da outro dia.
-     
+
   if(countLuz >= 0 && countLuz < 39600) {
     digitalWrite(ledPin, HIGH); // Desliga lampada
   }
